@@ -1,0 +1,21 @@
+meta {
+  name: Ingredient - Index
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3000/ingredients
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFjY291bnQiLCJpZCI6IjY4NTRlY2YwNDExZDFjYWI0MDg5MDdlYyIsImlhdCI6MTc1MDM5NjE1NCwiZXhwIjoxNzUwNTY4OTU0fQ.HZohZJkEXh3oq_r1mJxMiLtlIEuegZ0A6kNYP8Zltnc
+}
+
+body:json {
+  {
+    "ingredientName": "Tomato"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Public - Create User
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "wha",
+    "password": "123"
+  }
+}
